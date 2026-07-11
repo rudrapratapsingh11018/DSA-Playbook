@@ -7,7 +7,6 @@
 
 ## Problems:
 1. Two Sum
-
 Problems Solved: 1
 
 ### 2. Maximum Subarray
