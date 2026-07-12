@@ -1,7 +1,7 @@
 # Codeforces Solutions
 
 This folder contains my solutions to Codeforces problems, organized by difficulty.
-
+https://codeforces.com/problemset/submit 
 ## Structure
 - 800/ → Beginner problems
 - 900/ → Easy problems
