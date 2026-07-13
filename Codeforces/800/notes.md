@@ -14,3 +14,21 @@ https://codeforces.com/problemset/submit
 
 ## Language
 - C++
+
+## Example
+Input:
+2
+word
+localization
+
+Output:
+word
+l10n
+
+## Concepts Used
+- Strings
+- Loops
+- Conditional statements
+
+## Language
+C++
