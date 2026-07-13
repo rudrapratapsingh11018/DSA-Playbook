@@ -35,5 +35,5 @@ O(n)
 C++
 
 ## Progress
-Problems Solved: 1
+Problems Solved: 2
 Status: In Progress 
