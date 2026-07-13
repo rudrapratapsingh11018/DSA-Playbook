@@ -12,6 +12,7 @@ This section covers common string problems for coding interviews, focusing on pa
 | # | Problem | Approach | Time |
 |--|--------|---------|------|
 | 1 | Valid Palindrome | Two Pointer | O(n) |
+| 2 | Reverse String | Two Pointer | O(n) | O(1) |
 
 ## Progress
 Problems Solved: 1
