@@ -54,3 +54,31 @@ Basic Math
 
 ## Language
 C++
+
+# 236A -  Boy or Girl (236A)
+
+## Key Idea
+Count the number of distinct characters in the string.
+
+## Approach
+- Use `set<char>` to store unique characters
+- The size of the set gives the count of distinct characters
+
+## Logic
+- If count is even → print "CHAT WITH HER!"
+- If count is odd → print "IGNORE HIM!"
+
+## Steps
+1. Input string s
+2. Insert each character into a set
+3. Get size of set
+4. Check even or odd
+5. Print result
+
+## Alternative
+- Use an array of size 26 to track character frequency
+- Count unique characters manually
+
+## Complexity
+- Time: O(n)
+- Space: O(n)
