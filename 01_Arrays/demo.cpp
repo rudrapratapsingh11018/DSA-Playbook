@@ -44,8 +44,8 @@ int main() {
   }
   return 0;
 }
-*/
-
+/*
+/
 int main () {
    int a,b;
   cout<<"enter a = ";
@@ -61,3 +61,20 @@ cout << "Largest = " << largest;
 cout<< "smallest = " << smallest;
 return 0;
 }
+*/
+ int main(){
+  int x;
+  cout<<"Enter the choice of department ";
+  cin>>x;
+
+  switch(x){
+  case 1: cout<<"CSE core ";break;
+  case 2: cout<<"AI/ML ";break;
+  case 3: cout<<"cyber security ";break;
+  case 4: cout<<"cloud computing ";break;
+  case 5: cout<<"health information ";break;
+  default : cout<<"Not selected!";
+}
+return 0;
+ }
+ 
