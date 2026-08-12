@@ -62,6 +62,7 @@ cout<< "smallest = " << smallest;
 return 0;
 }
 */
+/*
  int main(){
   int x;
   cout<<"Enter the choice of department ";
@@ -77,4 +78,32 @@ return 0;
 }
 return 0;
  }
- 
+ */
+
+int main(){
+  int number = 20;
+  int &ref = number;
+  int * ptr = &number; /*
+  cout<< *ptr <<endl;
+  cout<< number<<endl;
+  cout<< ptr;
+  cout<<&number;
+*/
+cout<<"Value of Ref = "<<ref;
+  if( ptr == &number){
+    cout<<"ptr == &number ";
+  }
+  else{
+    cout<<"ptr /= &number";
+  }
+cout<<endl;
+  if( *ptr == number){
+    cout<<"*ptr = number";
+  }
+  else{
+    cout<<" *ptr /= number";
+  }
+  ref = 50;
+  cout<<"Updated ref = "<<ref;
+return 0;
+}
