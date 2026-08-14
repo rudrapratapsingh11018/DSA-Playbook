@@ -78,32 +78,49 @@ return 0;
 }
 return 0;
  }
- */
+ 
 
+class Rectangle{
+int l , b;
+public:
+void calculate() {
+cin>>l>>b;
+}
+int area(){
+  return l*b;
+}
+int perimeter (){
+  return 2*(l+b);
+}
+
+
+  void display(){
+    cout<< area() << perimeter();
+  }
+};
 int main(){
-  int number = 20;
-  int &ref = number;
-  int * ptr = &number; /*
-  cout<< *ptr <<endl;
-  cout<< number<<endl;
-  cout<< ptr;
-  cout<<&number;
-*/
-cout<<"Value of Ref = "<<ref;
-  if( ptr == &number){
-    cout<<"ptr == &number ";
-  }
-  else{
-    cout<<"ptr /= &number";
-  }
-cout<<endl;
-  if( *ptr == number){
-    cout<<"*ptr = number";
-  }
-  else{
-    cout<<" *ptr /= number";
-  }
-  ref = 50;
-  cout<<"Updated ref = "<<ref;
+Rectangle r;
+r.calculate();
+r.display();
+
 return 0;
+}
+*/
+int main() {
+    int units;
+    float bill;
+
+    cout << "Enter units consumed: ";
+    cin >> units;
+
+    if(units <= 100)
+        bill = units * 4;
+    else if(units <= 200)
+        bill = 100 * 4 + (units - 100) * 6;
+    else
+        bill = 100 * 4 + 100 * 6 + (units - 200) * 8;
+
+    cout << "Electricity Bill = Rs." << bill;
+
+    return 0;
 }
