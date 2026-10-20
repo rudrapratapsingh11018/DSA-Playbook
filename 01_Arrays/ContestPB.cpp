@@ -13,13 +13,12 @@ void solve() {
     
     vector<bool> printed(n + 1, false);
     stack<int> memory;
+    int current_doc = 1;
     
-    for (int i = 0; i < n; i++) {
-        char cmd = s[i];
-        int doc_id = i + 1; // The current document associated with this command
-        
+    for (char cmd : s) {
         if (cmd == '1') {
-            memory.push(doc_id);
+            memory.push(current_doc);
+            current_doc++;
         } else if (cmd == '2') {
             if (!memory.empty()) {
                 int top_doc = memory.top();
@@ -27,11 +26,12 @@ void solve() {
                 printed[top_doc] = true;
             }
         } else if (cmd == '3') {
-            printed[doc_id] = true;
+            printed[current_doc] = true;
+            current_doc++;
         }
     }
     
-    // Find all documents from 1 to n that were never printed
+    // Collect all documents that were not printed
     vector<int> not_printed;
     for (int i = 1; i <= n; i++) {
         if (!printed[i]) {
@@ -39,7 +39,7 @@ void solve() {
         }
     }
     
-    // Output format
+    // Output the results
     cout << not_printed.size() << "\n";
     for (size_t i = 0; i < not_printed.size(); i++) {
         cout << not_printed[i] << (i + 1 == not_printed.size() ? "" : " ");
@@ -48,6 +48,7 @@ void solve() {
 }
 
 int main() {
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
