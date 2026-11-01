@@ -391,3 +391,180 @@ return 0;
 
 //     return 0;
 // }
+
+// template <class T>
+// class Record{
+//   private:
+//      T data;
+//   public:
+//   Record(T d) : data(d){}
+//   void display(){
+//     cout<< "Record Data: "<<data<<endl;
+//   }
+// };
+
+// int main(){
+//   Record<string> studentRecord("Rudra Pratap Singh-25BCE11018") ;
+//   Record<int> bookId( 11018);
+//   studentRecord.display();
+//   bookId.display();
+
+// return 0;
+// }
+#include <bits/stdc++.h>
+using namespace std;
+
+// template <typename T> 
+// T findMax( T x, T y) {
+//   return (x>y)? x:y;
+// }
+
+// int main(){
+//   cout<<"Maximum ?" << findMax<int>( 10, 8)<<endl;
+//   cout<<"Maximum"<<findMax<float> (2854354985.33, 42364864.870)<<endl;
+//   return 0;
+// }
+
+// template < typename T>
+// class Container {
+//   protected :
+//   T item;
+
+//   public :
+//   Container ( T i ) : item( i) {} 
+//   virtual void show() = 0;
+
+// };
+
+// class Electronics : public Container <string> {
+//   public:
+//   Electronics (string name ) : Container<string> ( name) {}
+
+//   void show() override {
+//     cout<< "Electronic Product : "<<item <<endl;
+//   }
+// };
+
+// class Groceries : public Container <string > {
+
+//   public :
+//   Groceries ( string name ) : Container<string > (name) {}
+
+//   void show () override {
+//     cout<< "Groceries product " <<item <<endl;
+//   }
+// };
+
+
+// class Furniture : public Container<string> {
+//   public :
+//   Furniture ( string name) : Container<string> (name) {}
+
+//   void show() override {
+//     cout<< "Furniture Product "<<item<<endl;
+//   }
+// };
+
+
+// int main() {
+//   Electronics laptop ( "Acer Aspire Lite ");
+//   Groceries egg( "Brown Egg 2x30 ");
+//   Furniture sofa( "Red Velvet cousin");
+
+//   laptop.show();
+//   egg.show();
+//   sofa.show();
+// }
+
+
+// int main() {
+
+// list <string> addmision;
+// addmision. push_back("Vishal 25BAI10287");
+// addmision. push_back("Rishi 25BAI11072");
+// addmision. push_front("Management Quota : Rudra 25BCE11018");// special fast insertion
+
+// cout<<"Admission Queue: ";
+
+// for( const string&A : addmision){
+
+//   cout<<A<<"|";
+// }
+// return 0;
+// }
+
+// int main(){
+//   vector <int > Regno = {23,11,65,78,44,22,33,22,22,33,23,45,78,45,88};
+
+//   // sorting 
+
+//   sort(Regno.begin(), Regno.end() );
+
+//   int c = count( Regno.begin(), Regno.end(),22);
+
+//   for( int r : Regno) {
+//     cout<<r<<"|";
+//   }
+//  cout<<endl;
+//   cout<<"Regno 22 appears "<<c<< "times!"<<endl;
+//  return 0;
+
+// }
+ 
+
+// int main(){
+//   vector <double> marks = { 67.00 , 68.00,68.00, 81.00,79.00};
+//   double sum =0 ;
+
+//   // using the standard iterator traversal 
+
+//   for ( vector<double> :: iterator i = marks.begin(); i!= marks.end(); i++) {
+//       sum += *i;
+//       cout<< *i << "+";
+//   }
+//   cout<<endl;
+
+//   cout <<"Total : "<<sum <<endl;
+
+//   return 0;
+// }
+
+
+
+// int  main(){
+
+//   vector <int > marks = { 99, 100, 99, 94, 88} ;
+//   int sum =0;
+
+//   // standard iterator traversal  
+
+//   for( vector<int> :: iterator i = marks.begin(); i != marks.end(); i++) {
+//     sum += * i;
+//     cout<< *i << " ";
+//   }
+//   cout<<endl;
+
+//   cout<<"Total : "<<sum<<endl;
+// double Percentage = sum/5;
+// cout<<Percentage <<" %"<<endl;
+// return 0;
+// }
+
+
+int main() {
+
+  queue<string> complaints ;
+  complaints.push("Server Overlaod / Busy !!");
+
+
+  set<int> uniqueID = { 11018, 10287, 10138, 11072, 10287};
+
+
+  map<int , string> customerDB;
+  customerDB[10287] = "Vishal Malviya";
+
+  cout<<"Handling Compaints:"<<complaints.front() <<endl;//FIFO
+  cout<<"Total unique IDs :"<<uniqueID.size()<<endl;
+  cout<<"customer 10287 :"<<customerDB[10287]<<endl;
+return 0;
+}
